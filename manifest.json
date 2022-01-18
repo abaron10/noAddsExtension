@@ -3,7 +3,12 @@
     "name":"Blockad (no more ads)",
     "description":"Free extension for youtube users, Blockad takes care of removing annoying ads for you",
     "version":"1.0",
-    "icons": {
+    "content_scripts":[{
+        "js":["script.js"],
+        "runt_at": "document_idle",
+        "matches":["<all_urls>"]
+    }],
+    "icons": { 
         "16": "logos.png",
         "32": "logos.png",
         "48": "logos.png",
@@ -12,5 +17,9 @@
     "browser_action": {
         "default_icon": "logos.png",
         "default_popup": "popup.html"
-      }
+      },
+    "permissions":[
+        "tabs",
+        "activeTab"
+    ]
 }
