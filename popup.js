@@ -1,4 +1,4 @@
-function removeAdds() {
+function removeAds() {
   setInterval(function () {
     const defined = v => v !== null && v !== undefined;
     const ad = [...document.querySelectorAll(".ad-showing")][0];
@@ -20,4 +20,4 @@ function removeAdds() {
   };
 }
 
-removeAdds();
+removeAds();
