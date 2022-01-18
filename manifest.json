@@ -1,15 +1,15 @@
 {
     "manifest_version":2,
-    "name":"Youtube",
+    "name":"Blockad",
     "description":"",
     "version":"1.0",
-    "content_security_policy": "script-src 'self' 'sha256-WOdSzz11/3cpqOdrm89LBL2UPwEU9EhbDtMy2OciEhs='",
     "content_scripts":[{
         "js":["script.js"],
         "runt_at": "document_idle",
         "matches":["<all_urls>"]
     }],
     "browser_action": {
+        "default_icon": "logo.png",
         "default_popup": "popup.html"
       },
     "permissions":[
