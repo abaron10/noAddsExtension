@@ -5,7 +5,10 @@ function removeAds() {
     if (defined(ad)) {
       const video = document.querySelector("video");
       if (defined(video)) {
+        
+        if (!isNaN(video.duration))
         video.currentTime = video.duration;
+        
       }
     }
     var skip = document.getElementsByClassName(
